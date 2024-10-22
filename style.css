@@ -13,3 +13,38 @@ header {
     display: flex;
     justify-content: flex-start;
 }
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+.featured-container{
+    padding: 2.5rem 7.5rem;
+    height: 100vh;
+    background-image: url(./assets/cidade.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items:last baseline;
+    
+}
+
+.featured {
+   color: #FFF;
+}
