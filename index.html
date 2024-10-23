@@ -9,116 +9,145 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
+
+<!-- BODY -->
 <body>
+
+    <!-- Header -->
     <header>
-        <div class="container">
-            <h1>The Dev News</h1>
-        </div>
+        <h1>The Dev News</h1>
     </header>
 
-    <main class="container">
+    <!-- Main: Corpo do site -->
+    <main>
+        <!-- News: Informações Principais -->
+        <div id="news">
 
-        <!-- Destaque -->
-        <section class="featured-container">
-            <div class="featured">
-                <p>opinião</p>
-                <h2>Como é ser um desenvolvedor</h2>
-                <p>By Fabio Tetsuo</p>
-            </div>
-        </section>
+            <!-- Seção: Destaques -->
+            <section>
+                <div class="destaque">
+                    <span>opinião</span>
+                    <h2>Como é ser um desenvolvedor</h2>
+                    <p><b>By</b> Fabio Tetsuo</p>
+                </div>
+            </section>
+            
+
+            <!-- Seção: Posts Recentes -->
+            <section>
+                <div class="recent-posts">
+                    <h3>Posts mais recentes</h3>
+                    <a href="">Ver todos</a>
+                </div>
+
+            <!-- Cards -->
+                <div class="cards">
+
+                    <article class="cards-grid">
+                        <img src="./assets/banner_1.jpeg" alt="">
+                        <div class="content-cards">
+                            <span>desenvolvimento</span>
+                            <h3>Desenvolvimento mobile</h3>
+                            <h4><b>By</b> Fabio Tetsuo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <h5>22 Agosto 2022</h5>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/banner_2.jpeg" alt="">
+                        <div class="content-cards">
+                            <span>saude</span>
+                            <h3>Balancear vida profissional e pessoal</h3>
+                            <h4><b>By</b> Ridho Satriawan</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <h5>22 Agosto 2022</h5>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/banner_3.jpeg" alt="">
+                        <div class="content-cards">
+                            <span>desenvolvimento</span>
+                            <h3>Configurando VSCode</h3>
+                            <h4><b>By</b> Fabio Tetsuo</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <h5>22 Agosto 2022</h5>
+                        </div>
+                    </article>
+
+                    <article>
+                        <img src="./assets/banner_4.jpeg" alt="">
+                        <div class="content-cards">
+                            <span>produtividade</span>
+                            <h3>2 monitores ou 1 ultrawide?</h3>
+                            <h4><b>By</b> Fulano da Silva</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
+                            <h5>22 Agosto 2022</h5>
+                        </div>
+                    </article>
+                </div>
+            </section>  
+
+        </div>
+            
+
+        <!-- Barra Lateral -->
+        <aside id="asides">
+
+                 <!-- Posts -->
+                <div class="post">
+                    <div class="title-aside">
+                        <h3>Posts populares</h3>
+                    </div>
+
+                    <div class="content-post">
+                        <ul>
+                            <li class="post-detail">
+                                <img src="./assets/article_1.jpeg" alt="">
+                                <h3 class="title-post">Desevolvimento atual</h3>
+                                <p>22 Agosto 2022</p>
+                            </li>
+    
+                            <li class="post-detail">
+                                <img src="./assets/article_2.jpeg" alt="">
+                                <h3 class="title-post">GitLab vs GitHub</h3>
+                                <p>22 Agosto 2022</p>
+                            </li>
+    
+                            <li class="post-detail">
+                                <img src="./assets/article_3.jpeg" alt="">
+                                <h3 class="title-post">Café atrapalha?</h3>
+                                <p>22 Agosto 2022</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Categories -->
+                <div class="categories">
+                    <div class="title-aside">
+                        <h3>Categorias</h3>
+                    </div>
+
+                    <div class="list-categories">
+                        <ul>
+                            <li><a href="#">> saúde (1)</a></li>
+                            <li><a href="#">> desenvolvimento (2)</a></li>
+                            <li><a href="#">> produtividade (2)</a></li>
+                            <li><a href="#">> opinião (1)</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+        </aside>
         
-        <!-- Posts Recentes -->
-        <section class="posts-container">
-            <div class="recent-posts">
-                <h3>Posts mais recentes</h3>
-                <a href="">Ver todos</a>
-            </div>
-            <div class="posts-grid">
-                <article class="post-card">
-                    <img src="./assets/banner_1.jpeg" alt="">
-                    <div class="post-content">
-                        <span class="tag">desenvolvimento</span>
-                        <h3>Desenvolvimento mobile</h3>
-                        <h4>By Fabio Tetsuo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <h5>22 Agosto 2022</h5>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <img src="./assets/banner_2.jpeg" alt="">
-                    <div class="post-content">
-                        <span class="tag">saude</span>
-                        <h3>Balancear vida profissional e pessoal</h3>
-                        <h4>By Ridho Satriawan</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <h5>22 Agosto 2022</h5>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <img src="./assets/banner_3.jpeg" alt="">
-                    <div class="post-content">
-                        <span class="tag">desenvolvimento</span>
-                        <h3>Configurando VSCode</h3>
-                        <h4>By Fabio Tetsuo</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <h5>22 Agosto 2022</h5>
-                    </div>
-                </article>
-
-                <article class="post-card">
-                    <img src="./assets/banner_4.jpeg" alt="">
-                    <div class="post-content">
-                        <span class="tag">produtividade</span>
-                        <h3>2 monitores ou 1 ultrawide?</h3>
-                        <h4>By Fulano da Silva</h4>
-                        <p>Lorem ipsum dolor sit amet consectetur. In vitae urna commodo amet congue integer dapibus. Interdum semper mauris convallis fusce enim odio. Vitae montes ridiculus felis.</p>
-                        <h5>22 Agosto 2022</h5>
-                    </div>
-                </article>
-            </div>    
-        </section>
-
-        
-         <aside>
-            <!-- Posts Laterais -->
-            <div class="popular-posts">
-                <h3>Posts populares</h3>
-                <ul>
-                    <li>
-                        <img src="./assets/article_1.jpeg" alt="">
-                        <p class="post-title">Desevolvimento atual</p>
-                        <p class="post-date">22 Agosto 2022</p>
-                    </li>
-                    <li>
-                        <img src="./assets/article_2.jpeg" alt="">
-                        <p class="post-title">GitLab vs GitHub</p>
-                        <p class="post-date">22 Agosto 2022</p>
-                    </li>
-                    <li>
-                        <img src="./assets/article_3.jpeg" alt="">
-                        <p class="post-title">Café atrapalha?</p>
-                        <p class="post-date">22 Agosto 2022</p>
-                    </li>
-                </ul>
-            </div>
-
-            <!-- Categorias -->
-             <div class="categories">
-                <h3>Categorias</h3>
-                <ul>
-                    <li>> saude (1)</li>
-                    <li>> desenvolvimento (2)</li>
-                    <li>> produtividade (2)</li>
-                    <li> opiniao (1)</li>
-                </ul>
-             </div>
-         </aside>  
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>Copyright@The Dev News</p>
-     </footer>
-</body>
+    </footer>
+
+</body> 
 </html>
