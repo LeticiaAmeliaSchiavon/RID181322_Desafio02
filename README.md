@@ -1,6 +1,6 @@
 Esse é um desafio feito pela DNC para praticar o conteúdo aprendido sobre HTML, CSS e responsidade.
 
-Este é o acesso a site no Git Pages: https://leticiaameliaschiavon.github.io/RID181322_Desafio02/
+Este é o acesso a site no Vercel: https://rid-181322-desafio02.vercel.app/
 
 Para entender melhor o conceito do que foi pedido este é o desafio:
 
